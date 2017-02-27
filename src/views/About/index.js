@@ -1,0 +1,16 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router';
+
+export default class About extends Component {
+  render() {
+    const { children } = this.props;
+
+    return (
+      <div className='About'>
+        <h1> About Me </h1>
+        { children }
+      </div>
+    );
+  }
+}
+
