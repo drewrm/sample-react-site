@@ -27,4 +27,3 @@ jobs:
                 npm install -g yarn
                 yarn install
                 yarn run compile
-                echo "Ship It 🛳" 

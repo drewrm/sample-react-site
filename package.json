@@ -36,7 +36,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot --inline",
-    "compile": "webpack"
+    "compile": "webpack -p --bail && echo 'Ship It 🛳'"
   },
   "author": "Andrew Myers",
   "license": "ISC"
