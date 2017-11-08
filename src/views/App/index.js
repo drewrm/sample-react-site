@@ -1,5 +1,6 @@
 import './index.css'
 import 'wingcss/dist/wing.min.css'
+import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import Navigation from './navigation'
 
@@ -37,8 +38,8 @@ export default class App extends Component {
 }
 
 App.propTypes = {
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.arrayOf(React.PropTypes.node),
-    React.PropTypes.node
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
   ])
 }

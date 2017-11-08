@@ -1,18 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
+import PropTypes from 'prop-types'
 import App from './views/App'
 import Home from './views/Home'
 import About from './views/About'
 
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { createBrowserHistory } from 'history'
+import { Router, Route, IndexRoute, Switch } from 'react-router'
 
 ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path='/' component={App}>
-      <IndexRoute component={Home} />
-      <Route path='/about' component={About} />
-    </Route>
+  <Router history={createBrowserHistory()}>
+    <div>
+        <Route component={App} />
+        <Switch>
+            <Route exact path="/" component={Home} />
+        </Switch>
+    </div>
   </Router>,
   document.getElementById('app')
 )

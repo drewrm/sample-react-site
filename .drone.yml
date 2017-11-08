@@ -1,0 +1,8 @@
+---
+build:
+  frontend:
+    image: node:8.8
+    commands:
+        - npm install -g yarn
+        - yarn install
+        - yarn run compile
