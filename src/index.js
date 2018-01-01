@@ -11,10 +11,11 @@ import { Router, Route, IndexRoute, Switch } from 'react-router'
 ReactDOM.render(
   <Router history={createBrowserHistory()}>
     <div>
-        <Route component={App} />
-        <Switch>
-            <Route exact path="/" component={Home} />
-        </Switch>
+        <App>
+            <Switch>
+                <Route exact path="/" component={Home} />
+            </Switch>
+        </App>
     </div>
   </Router>,
   document.getElementById('app')
